@@ -52,14 +52,16 @@ body {
       margin: 0 auto;
       flex-wrap: wrap;
       position: relative;
+      float: left;
+      text-overflow: inherit;
   }
       .item {
         text-align: center;
         font-family: 'Play', sans-serif;
         flex-grow: 1;
-        /* flex-direction: flex-start ; 
+        flex-direction: flex-start ; 
         align-items:flex-start; 
-        justify-content: space-between; */
+        justify-content: space-between;
         position: relative;
                 
               }
@@ -107,6 +109,7 @@ body {
 
   .item:hover .footer{
       display:inherit;
+      z-index: 22;
   }
 
   #sección-3 {
