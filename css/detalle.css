@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.principal{
+    background-image: url(img/Bort.jpg);
+    position:relative;
+    z-index:-1;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.principal:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+}
+
+.jw{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    transform: translate(-35%, 60%);
+    font-size: 30px;
+    font-family:'Play', sans-serif;
+    color:#ffc038;
+    z-index: -1;
+}
+
+
+.cr{
+    position: absolute;
+    top: 25%;
+    left: 32%;
+    transform: translate(50%, 1600%);
+    font-size: 30px;
+    font-family:'Play', sans-serif;
+    color:#ffc038;
+    z-index: -1;
+    
+}
+
+.navbar{
+    position:fixed;
+    display: flex;
+    background: darkgray;
+    padding: 1rem;
+    border-radius: 25px;
+    flex-direction:column;
+    width: 100%;
+    height: 15%;   
+    z-index: 22;
+
+}
+
+.navbar > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+}
+
+.navbar li{
+    margin-right: 1rem;
+
+}
+.navbar li a{
+    font-family:'Play', sans-serif;
+    text-decoration: none;
+    color:#fff;
+    
+}
+.navbar li > a:hover {
+    color: #fff;
+    background-color:#2b2222;
+    border-radius: 25px;
+}
+
+.navbar > form{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+
+}
+
+.navbar input{
+    flex:1;
+    border-radius: 25px;
+    border: 0;
+    font-family:'Play', sans-serif;
+    
+}
+
+.navbar button{
+    background: #2b2222;
+    border:0;
+    border-radius: 1em;
+    color:#fff;
+    padding: 10px 4px;
+    margin-left: .3rem;
+    font-family:'Play', sans-serif;
+}
+
+.container{
+padding-bottom:56,25%;
+height: 0;
+width: 100%;
+z-index: 1;
+position: absolute;
+}
+
+#video{
+    width: 100%;
+    top: 10%;
+    left: 50%;
+    position: absolute;
+    max-width: 420px;
+    transform: translate(-35%, 100%);
+    box-sizing: border-box;
+    padding: 22px 22px;
+    z-index: -5;
+    
+
+}
+
+
+.container2 {
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    background-color: #2b2222;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    flex-grow: 1;
+    flex-direction: flex-start ; 
+    align-items:flex-start; 
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (max-widht: 768px) {
+    .wrapper{
+        width: 100%;
+
+    }
+    .navbar {
+        flex-direction: column;
+        display:none;
+        margin-top: 50px;
+        height: 100vh;
+        justify-content: flex-start;
+        padding-left: 0;
+
+    }
+    .navbar ul{
+        flex-direction: row;
+        margin-bottom: 1em;
+    }
+    .navbar li{
+        padding: 0;
+        font-size: 8px;
+    }
+    .jw{
+        font-size: 10px;
+        padding-left: 20px;
+    }
+
+    #video{
+        position: ;
+    }
+
+    .cr{
+        font-size: 10px;
+        padding-left: 20px;
+}

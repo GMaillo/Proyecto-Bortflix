@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+
+.body{
+    font-family: 'Play', sans-serif;
+}
+
+.background {
+    margin: 0;
+    padding: 0; 
+    background-color: blue;
+    background: url(../img/Bortflix\ placa.jpg);
+    background-repeat: repeat;
+    height: 100vh; 
+    
+
+} 
+.login{
+    width: 450px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    background-color: darkgrey;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius:10%;
+    
+    
+}
+.logo {
+    width :320px;
+    height: 220px;
+    position: absolute;
+    top: -163px;
+    left: calc(16%);
+    
+    
+}
+.login label {
+    font-family: 'Play', sans-serif;
+    margin:0;
+    padding:0;
+    font-weight: bold;
+    display:block;
+    
+    
+    
+
+}
+
+.login h1{
+    margin:0;
+    padding:0 0 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+
+}
+
+.login input{
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+.login input[type="text"],
+.login input[type="contraseña"]{
+    border:none;
+    border-bottom: 2px solid;
+    background:transparent;
+    height: 50px;
+    font-size:15px;
+    
+    
+}
+
+.login input[type="submit"]{
+    height: 50px;
+    border:1px black;
+    background: #ffc038;
+    border-radius:15px;
+    font-size:22px;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+    
+}
+
+.login input:hover[type="submit"]{
+    color: darkgrey;
+}
+.login a {
+    text-decoration:none;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+}
+
+.login a:hover{
+    color: #ffc038;
+}
+
+
