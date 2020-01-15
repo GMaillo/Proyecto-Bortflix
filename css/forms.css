@@ -1,0 +1,94 @@
+.form-group,
+.form-actions {
+  display: block;
+  margin: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: .25rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  display: block;
+  width: 100%;
+  border: solid 1px var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--text-color);
+  padding: .75rem 0.5rem;
+  font-size: 1rem;
+}
+
+.form-group input[type="text"]:invalid,
+.form-group input[type="password"]:invalid {
+  border-left: solid 5px var(--brand-color);
+}
+
+.form-actions input[type="submit"] {
+  border: 0;
+  border-radius: var(--border-radius);
+  background-color: var(--brand-color);
+  color: var(--brand-overlay);
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+
+.form-group.checkbox {
+    position: relative;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border: 1px solid var(--border-color);
+  margin-top: 1px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox label::after {
+  content: "";
+  display: inline-block;
+  height: .45rem;
+  width: .5rem;
+  border-left: 2px solid darkcyan;
+  border-bottom: 3px solid darkcyan;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: .25rem;
+  top: .25rem;
+}
+
+.checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto .5rem;
+}
